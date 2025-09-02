@@ -4,7 +4,7 @@ import requests
 api_key = "295fe3b84571983649e6e3bbfed8e9e4"
 user_cn = str(input("Type the country name: "))
 user_sc = str(input("Type the state code: "))
-user_cc = str(input("Type the country: "))
+user_cc = str(input("Type the country code: "))
 def get_location(country_name, state_code, country_code, api_key):
     try:
         response = requests.get(f"http://api.openweathermap.org/geo/1.0/direct?q={country_name},{state_code},{country_code}&appid={api_key}&limit=1")
